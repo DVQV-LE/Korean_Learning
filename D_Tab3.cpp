@@ -74,6 +74,8 @@ void D_Tab3::OnBnClickedCancel()
 void D_Tab3::OnBnClickedBefore()
 {
 	// TODO: 여기에 컨트롤 알림 처리기 코드를 추가합니다.
+	m_cnt = 0;
+	m_pt_cnt = 0;
 	announce = 0;
 	setting();
 }
@@ -121,7 +123,7 @@ void D_Tab3::OnBnClickedDicPt3()
 void D_Tab3::OnBnClickedDicPt4()
 {
 	// TODO: 여기에 컨트롤 알림 처리기 코드를 추가합니다.
-	int m_pt_cnt = 4;
+	m_pt_cnt = 4;
 	announce = 1;
 	setting();
 	m_static3.SetWindowText("네번째 파트입니다.");
@@ -152,23 +154,21 @@ void D_Tab3::OnBnClickedAnsCheck()
 void D_Tab3::OnBnClickedSound()
 {
 	// TODO: 여기에 컨트롤 알림 처리기 코드를 추가합니다.
-	switch (m_pt_cnt) {
-	case 1:
+	if (m_pt_cnt == 1) {
 		wave1 = m_cnt;
 		Sound();
-		break;
-	case 2:
+	} 
+	if (m_pt_cnt == 2) {
 		wave2 = m_cnt;
 		Sound();
-		break;
-	case 3:
+	}
+	if (m_pt_cnt == 3) {
 		wave3 = m_cnt;
 		Sound();
-		break;
-	case 4:
+	}
+	if (m_pt_cnt == 4) {
 		wave4 = m_cnt;
 		Sound();
-		break;
 	}
 }
 
@@ -212,243 +212,479 @@ void D_Tab3::setting()
 int D_Tab3::Sound()
 {
 	// TODO: 여기에 구현 코드 추가.
-	switch (wave1)
+
+	if (m_pt_cnt == 1 && wave1 == m_cnt) {
+		switch (wave1)
+		{
+		case 0:
+			PlaySound((LPCSTR)MAKEINTRESOURCE(IDR_WAVE1_1), NULL, SND_ASYNC | SND_RESOURCE);
+
+			BOOL PlaySound(
+				LPCSTR pszSound,
+				HMODULE hmod,
+				DWORD fdwSound);
+			break;
+		case 1:
+			PlaySound((LPCSTR)MAKEINTRESOURCE(IDR_WAVE1_2), NULL, SND_ASYNC | SND_RESOURCE);
+
+			BOOL PlaySound(
+				LPCSTR pszSound,
+				HMODULE hmod,
+				DWORD fdwSound);
+			break;
+		case 2:
+			PlaySound((LPCSTR)MAKEINTRESOURCE(IDR_WAVE1_3), NULL, SND_ASYNC | SND_RESOURCE);
+
+			BOOL PlaySound(
+				LPCSTR pszSound,
+				HMODULE hmod,
+				DWORD fdwSound);
+			break;
+		case 3:
+			PlaySound((LPCSTR)MAKEINTRESOURCE(IDR_WAVE1_4), NULL, SND_ASYNC | SND_RESOURCE);
+
+			BOOL PlaySound(
+				LPCSTR pszSound,
+				HMODULE hmod,
+				DWORD fdwSound);
+			break;
+		case 4:
+			PlaySound((LPCSTR)MAKEINTRESOURCE(IDR_WAVE1_5), NULL, SND_ASYNC | SND_RESOURCE);
+
+			BOOL PlaySound(
+				LPCSTR pszSound,
+				HMODULE hmod,
+				DWORD fdwSound);
+			break;
+		case 5:
+			PlaySound((LPCSTR)MAKEINTRESOURCE(IDR_WAVE1_6), NULL, SND_ASYNC | SND_RESOURCE);
+
+			BOOL PlaySound(
+				LPCSTR pszSound,
+				HMODULE hmod,
+				DWORD fdwSound);
+			break;
+		case 6:
+			PlaySound((LPCSTR)MAKEINTRESOURCE(IDR_WAVE1_7), NULL, SND_ASYNC | SND_RESOURCE);
+
+			BOOL PlaySound(
+				LPCSTR pszSound,
+				HMODULE hmod,
+				DWORD fdwSound);
+			break;
+		case 7:
+			PlaySound((LPCSTR)MAKEINTRESOURCE(IDR_WAVE1_8), NULL, SND_ASYNC | SND_RESOURCE);
+
+			BOOL PlaySound(
+				LPCSTR pszSound,
+				HMODULE hmod,
+				DWORD fdwSound);
+			break;
+		case 8:
+			PlaySound((LPCSTR)MAKEINTRESOURCE(IDR_WAVE1_9), NULL, SND_ASYNC | SND_RESOURCE);
+
+			BOOL PlaySound(
+				LPCSTR pszSound,
+				HMODULE hmod,
+				DWORD fdwSound);
+			break;
+		case 9:
+			PlaySound((LPCSTR)MAKEINTRESOURCE(IDR_WAVE1_10), NULL, SND_ASYNC | SND_RESOURCE);
+
+			BOOL PlaySound(
+				LPCSTR pszSound,
+				HMODULE hmod,
+				DWORD fdwSound);
+			break;
+		case 10:
+			PlaySound((LPCSTR)MAKEINTRESOURCE(IDR_WAVE1_11), NULL, SND_ASYNC | SND_RESOURCE);
+
+			BOOL PlaySound(
+				LPCSTR pszSound,
+				HMODULE hmod,
+				DWORD fdwSound);
+			break;
+		case 11:
+			PlaySound((LPCSTR)MAKEINTRESOURCE(IDR_WAVE1_12), NULL, SND_ASYNC | SND_RESOURCE);
+
+			BOOL PlaySound(
+				LPCSTR pszSound,
+				HMODULE hmod,
+				DWORD fdwSound);
+			break;
+		case 12:
+			PlaySound((LPCSTR)MAKEINTRESOURCE(IDR_WAVE1_13), NULL, SND_ASYNC | SND_RESOURCE);
+
+			BOOL PlaySound(
+				LPCSTR pszSound,
+				HMODULE hmod,
+				DWORD fdwSound);
+			break;
+		case 13:
+			PlaySound((LPCSTR)MAKEINTRESOURCE(IDR_WAVE1_14), NULL, SND_ASYNC | SND_RESOURCE);
+
+			BOOL PlaySound(
+				LPCSTR pszSound,
+				HMODULE hmod,
+				DWORD fdwSound);
+			break;
+		}
+	}
+
+	if (m_pt_cnt == 2 && wave2 == m_cnt) {
+		switch (wave2)
+		{
+		case 0:
+			PlaySound((LPCSTR)MAKEINTRESOURCE(IDR_WAVE2_1), NULL, SND_ASYNC | SND_RESOURCE);
+
+			BOOL PlaySound(
+				LPCSTR pszSound,
+				HMODULE hmod,
+				DWORD fdwSound);
+			break;
+		case 1:
+			PlaySound((LPCSTR)MAKEINTRESOURCE(IDR_WAVE2_2), NULL, SND_ASYNC | SND_RESOURCE);
+
+			BOOL PlaySound(
+				LPCSTR pszSound,
+				HMODULE hmod,
+				DWORD fdwSound);
+			break;
+		case 2:
+			PlaySound((LPCSTR)MAKEINTRESOURCE(IDR_WAVE2_3), NULL, SND_ASYNC | SND_RESOURCE);
+
+			BOOL PlaySound(
+				LPCSTR pszSound,
+				HMODULE hmod,
+				DWORD fdwSound);
+			break;
+		case 3:
+			PlaySound((LPCSTR)MAKEINTRESOURCE(IDR_WAVE2_4), NULL, SND_ASYNC | SND_RESOURCE);
+
+			BOOL PlaySound(
+				LPCSTR pszSound,
+				HMODULE hmod,
+				DWORD fdwSound);
+			break;
+		case 4:
+			PlaySound((LPCSTR)MAKEINTRESOURCE(IDR_WAVE2_5), NULL, SND_ASYNC | SND_RESOURCE);
+
+			BOOL PlaySound(
+				LPCSTR pszSound,
+				HMODULE hmod,
+				DWORD fdwSound);
+			break;
+		case 5:
+			PlaySound((LPCSTR)MAKEINTRESOURCE(IDR_WAVE2_6), NULL, SND_ASYNC | SND_RESOURCE);
+
+			BOOL PlaySound(
+				LPCSTR pszSound,
+				HMODULE hmod,
+				DWORD fdwSound);
+			break;
+		case 6:
+			PlaySound((LPCSTR)MAKEINTRESOURCE(IDR_WAVE2_7), NULL, SND_ASYNC | SND_RESOURCE);
+
+			BOOL PlaySound(
+				LPCSTR pszSound,
+				HMODULE hmod,
+				DWORD fdwSound);
+			break;
+		case 7:
+			PlaySound((LPCSTR)MAKEINTRESOURCE(IDR_WAVE2_8), NULL, SND_ASYNC | SND_RESOURCE);
+
+			BOOL PlaySound(
+				LPCSTR pszSound,
+				HMODULE hmod,
+				DWORD fdwSound);
+			break;
+		case 8:
+			PlaySound((LPCSTR)MAKEINTRESOURCE(IDR_WAVE2_9), NULL, SND_ASYNC | SND_RESOURCE);
+
+			BOOL PlaySound(
+				LPCSTR pszSound,
+				HMODULE hmod,
+				DWORD fdwSound);
+			break;
+		case 9:
+			PlaySound((LPCSTR)MAKEINTRESOURCE(IDR_WAVE2_10), NULL, SND_ASYNC | SND_RESOURCE);
+
+			BOOL PlaySound(
+				LPCSTR pszSound,
+				HMODULE hmod,
+				DWORD fdwSound);
+			break;
+		case 10:
+			PlaySound((LPCSTR)MAKEINTRESOURCE(IDR_WAVE2_11), NULL, SND_ASYNC | SND_RESOURCE);
+
+			BOOL PlaySound(
+				LPCSTR pszSound,
+				HMODULE hmod,
+				DWORD fdwSound);
+			break;
+		case 11:
+			PlaySound((LPCSTR)MAKEINTRESOURCE(IDR_WAVE2_12), NULL, SND_ASYNC | SND_RESOURCE);
+
+			BOOL PlaySound(
+				LPCSTR pszSound,
+				HMODULE hmod,
+				DWORD fdwSound);
+			break;
+		case 12:
+			PlaySound((LPCSTR)MAKEINTRESOURCE(IDR_WAVE2_13), NULL, SND_ASYNC | SND_RESOURCE);
+
+			BOOL PlaySound(
+				LPCSTR pszSound,
+				HMODULE hmod,
+				DWORD fdwSound);
+			break;
+		case 13:
+			PlaySound((LPCSTR)MAKEINTRESOURCE(IDR_WAVE2_14), NULL, SND_ASYNC | SND_RESOURCE);
+
+			BOOL PlaySound(
+				LPCSTR pszSound,
+				HMODULE hmod,
+				DWORD fdwSound);
+			break;
+		}
+	}
+	
+	if (m_pt_cnt == 3 && wave3 == m_cnt)
 	{
-	case 0:
-		PlaySound((LPCSTR)MAKEINTRESOURCE(IDR_WAVE1_1), NULL, SND_ASYNC | SND_RESOURCE);
+		switch (wave3)
+		{
+		case 0:
+			PlaySound((LPCSTR)MAKEINTRESOURCE(IDR_WAVE3_1), NULL, SND_ASYNC | SND_RESOURCE);
 
-		break;
-	case 1:
-		PlaySound((LPCSTR)MAKEINTRESOURCE(IDR_WAVE1_2), NULL, SND_ASYNC | SND_RESOURCE);
+			BOOL PlaySound(
+				LPCSTR pszSound,
+				HMODULE hmod,
+				DWORD fdwSound);
+			break;
+		case 1:
+			PlaySound((LPCSTR)MAKEINTRESOURCE(IDR_WAVE3_2), NULL, SND_ASYNC | SND_RESOURCE);
 
-		break;
-	case 2:
-		PlaySound((LPCSTR)MAKEINTRESOURCE(IDR_WAVE1_3), NULL, SND_ASYNC | SND_RESOURCE);
+			BOOL PlaySound(
+				LPCSTR pszSound,
+				HMODULE hmod,
+				DWORD fdwSound);
+			break;
+		case 2:
+			PlaySound((LPCSTR)MAKEINTRESOURCE(IDR_WAVE3_3), NULL, SND_ASYNC | SND_RESOURCE);
 
-		break;
-	case 3:
-		PlaySound((LPCSTR)MAKEINTRESOURCE(IDR_WAVE1_4), NULL, SND_ASYNC | SND_RESOURCE);
+			BOOL PlaySound(
+				LPCSTR pszSound,
+				HMODULE hmod,
+				DWORD fdwSound);
+			break;
+		case 3:
+			PlaySound((LPCSTR)MAKEINTRESOURCE(IDR_WAVE3_4), NULL, SND_ASYNC | SND_RESOURCE);
 
-		break;
-	case 4:
-		PlaySound((LPCSTR)MAKEINTRESOURCE(IDR_WAVE1_5), NULL, SND_ASYNC | SND_RESOURCE);
+			BOOL PlaySound(
+				LPCSTR pszSound,
+				HMODULE hmod,
+				DWORD fdwSound);
+			break;
+		case 4:
+			PlaySound((LPCSTR)MAKEINTRESOURCE(IDR_WAVE3_5), NULL, SND_ASYNC | SND_RESOURCE);
 
-		break;
-	case 5:
-		PlaySound((LPCSTR)MAKEINTRESOURCE(IDR_WAVE1_6), NULL, SND_ASYNC | SND_RESOURCE);
+			BOOL PlaySound(
+				LPCSTR pszSound,
+				HMODULE hmod,
+				DWORD fdwSound);
+			break;
+		case 5:
+			PlaySound((LPCSTR)MAKEINTRESOURCE(IDR_WAVE3_6), NULL, SND_ASYNC | SND_RESOURCE);
 
-		break;
-	case 6:
-		PlaySound((LPCSTR)MAKEINTRESOURCE(IDR_WAVE1_7), NULL, SND_ASYNC | SND_RESOURCE);
+			BOOL PlaySound(
+				LPCSTR pszSound,
+				HMODULE hmod,
+				DWORD fdwSound);
+			break;
+		case 6:
+			PlaySound((LPCSTR)MAKEINTRESOURCE(IDR_WAVE3_7), NULL, SND_ASYNC | SND_RESOURCE);
 
-		break;
-	case 7:
-		PlaySound((LPCSTR)MAKEINTRESOURCE(IDR_WAVE1_8), NULL, SND_ASYNC | SND_RESOURCE);
+			BOOL PlaySound(
+				LPCSTR pszSound,
+				HMODULE hmod,
+				DWORD fdwSound);
+			break;
+		case 7:
+			PlaySound((LPCSTR)MAKEINTRESOURCE(IDR_WAVE3_8), NULL, SND_ASYNC | SND_RESOURCE);
 
-		break;
-	case 8:
-		PlaySound((LPCSTR)MAKEINTRESOURCE(IDR_WAVE1_9), NULL, SND_ASYNC | SND_RESOURCE);
+			BOOL PlaySound(
+				LPCSTR pszSound,
+				HMODULE hmod,
+				DWORD fdwSound);
+			break;
+		case 8:
+			PlaySound((LPCSTR)MAKEINTRESOURCE(IDR_WAVE3_9), NULL, SND_ASYNC | SND_RESOURCE);
 
-		break;
-	case 9:
-		PlaySound((LPCSTR)MAKEINTRESOURCE(IDR_WAVE1_10), NULL, SND_ASYNC | SND_RESOURCE);
+			BOOL PlaySound(
+				LPCSTR pszSound,
+				HMODULE hmod,
+				DWORD fdwSound);
+			break;
+		case 9:
+			PlaySound((LPCSTR)MAKEINTRESOURCE(IDR_WAVE3_10), NULL, SND_ASYNC | SND_RESOURCE);
 
-		break;
-	case 10:
-		PlaySound((LPCSTR)MAKEINTRESOURCE(IDR_WAVE1_11), NULL, SND_ASYNC | SND_RESOURCE);
+			BOOL PlaySound(
+				LPCSTR pszSound,
+				HMODULE hmod,
+				DWORD fdwSound);
+			break;
+		case 10:
+			PlaySound((LPCSTR)MAKEINTRESOURCE(IDR_WAVE3_11), NULL, SND_ASYNC | SND_RESOURCE);
 
-		break;
-	case 11:
-		PlaySound((LPCSTR)MAKEINTRESOURCE(IDR_WAVE1_12), NULL, SND_ASYNC | SND_RESOURCE);
+			BOOL PlaySound(
+				LPCSTR pszSound,
+				HMODULE hmod,
+				DWORD fdwSound);
+			break;
+		case 11:
+			PlaySound((LPCSTR)MAKEINTRESOURCE(IDR_WAVE3_12), NULL, SND_ASYNC | SND_RESOURCE);
 
-		break;
-	case 12:
-		PlaySound((LPCSTR)MAKEINTRESOURCE(IDR_WAVE1_13), NULL, SND_ASYNC | SND_RESOURCE);
+			BOOL PlaySound(
+				LPCSTR pszSound,
+				HMODULE hmod,
+				DWORD fdwSound);
+			break;
+		case 12:
+			PlaySound((LPCSTR)MAKEINTRESOURCE(IDR_WAVE3_13), NULL, SND_ASYNC | SND_RESOURCE);
 
-		break;
-	case 13:
-		PlaySound((LPCSTR)MAKEINTRESOURCE(IDR_WAVE1_14), NULL, SND_ASYNC | SND_RESOURCE);
+			BOOL PlaySound(
+				LPCSTR pszSound,
+				HMODULE hmod,
+				DWORD fdwSound);
+			break;
+		case 13:
+			PlaySound((LPCSTR)MAKEINTRESOURCE(IDR_WAVE3_14), NULL, SND_ASYNC | SND_RESOURCE);
 
-		break;
+			BOOL PlaySound(
+				LPCSTR pszSound,
+				HMODULE hmod,
+				DWORD fdwSound);
+			break;
+		}
+	}
+	
+	if (m_pt_cnt == 4 && wave4 == m_cnt)
+	{
+		switch (wave4)
+		{
+		case 0:
+			PlaySound((LPCSTR)MAKEINTRESOURCE(IDR_WAVE4_1), NULL, SND_ASYNC | SND_RESOURCE);
+
+			BOOL PlaySound(
+				LPCSTR pszSound,
+				HMODULE hmod,
+				DWORD fdwSound);
+			break;
+		case 1:
+			PlaySound((LPCSTR)MAKEINTRESOURCE(IDR_WAVE4_2), NULL, SND_ASYNC | SND_RESOURCE);
+
+			BOOL PlaySound(
+				LPCSTR pszSound,
+				HMODULE hmod,
+				DWORD fdwSound);
+			break;
+		case 2:
+			PlaySound((LPCSTR)MAKEINTRESOURCE(IDR_WAVE4_3), NULL, SND_ASYNC | SND_RESOURCE);
+
+			BOOL PlaySound(
+				LPCSTR pszSound,
+				HMODULE hmod,
+				DWORD fdwSound);
+			break;
+		case 3:
+			PlaySound((LPCSTR)MAKEINTRESOURCE(IDR_WAVE4_4), NULL, SND_ASYNC | SND_RESOURCE);
+
+			BOOL PlaySound(
+				LPCSTR pszSound,
+				HMODULE hmod,
+				DWORD fdwSound);
+			break;
+		case 4:
+			PlaySound((LPCSTR)MAKEINTRESOURCE(IDR_WAVE4_5), NULL, SND_ASYNC | SND_RESOURCE);
+
+			BOOL PlaySound(
+				LPCSTR pszSound,
+				HMODULE hmod,
+				DWORD fdwSound);
+			break;
+		case 5:
+			PlaySound((LPCSTR)MAKEINTRESOURCE(IDR_WAVE4_6), NULL, SND_ASYNC | SND_RESOURCE);
+
+			BOOL PlaySound(
+				LPCSTR pszSound,
+				HMODULE hmod,
+				DWORD fdwSound);
+			break;
+		case 6:
+			PlaySound((LPCSTR)MAKEINTRESOURCE(IDR_WAVE4_7), NULL, SND_ASYNC | SND_RESOURCE);
+
+			BOOL PlaySound(
+				LPCSTR pszSound,
+				HMODULE hmod,
+				DWORD fdwSound);
+			break;
+		case 7:
+			PlaySound((LPCSTR)MAKEINTRESOURCE(IDR_WAVE4_8), NULL, SND_ASYNC | SND_RESOURCE);
+
+			BOOL PlaySound(
+				LPCSTR pszSound,
+				HMODULE hmod,
+				DWORD fdwSound);
+			break;
+		case 8:
+			PlaySound((LPCSTR)MAKEINTRESOURCE(IDR_WAVE4_9), NULL, SND_ASYNC | SND_RESOURCE);
+
+			BOOL PlaySound(
+				LPCSTR pszSound,
+				HMODULE hmod,
+				DWORD fdwSound);
+			break;
+		case 9:
+			PlaySound((LPCSTR)MAKEINTRESOURCE(IDR_WAVE4_10), NULL, SND_ASYNC | SND_RESOURCE);
+
+			BOOL PlaySound(
+				LPCSTR pszSound,
+				HMODULE hmod,
+				DWORD fdwSound);
+			break;
+		case 10:
+			PlaySound((LPCSTR)MAKEINTRESOURCE(IDR_WAVE4_11), NULL, SND_ASYNC | SND_RESOURCE);
+
+			BOOL PlaySound(
+				LPCSTR pszSound,
+				HMODULE hmod,
+				DWORD fdwSound);
+			break;
+		case 11:
+			PlaySound((LPCSTR)MAKEINTRESOURCE(IDR_WAVE4_12), NULL, SND_ASYNC | SND_RESOURCE);
+
+			BOOL PlaySound(
+				LPCSTR pszSound,
+				HMODULE hmod,
+				DWORD fdwSound);
+			break;
+		case 12:
+			PlaySound((LPCSTR)MAKEINTRESOURCE(IDR_WAVE4_13), NULL, SND_ASYNC | SND_RESOURCE);
+
+			BOOL PlaySound(
+				LPCSTR pszSound,
+				HMODULE hmod,
+				DWORD fdwSound);
+			break;
+		case 13:
+			PlaySound((LPCSTR)MAKEINTRESOURCE(IDR_WAVE4_14), NULL, SND_ASYNC | SND_RESOURCE);
+
+			BOOL PlaySound(
+				LPCSTR pszSound,
+				HMODULE hmod,
+				DWORD fdwSound);
+			break;
+		}
 	}
 	return 0;
-	
-	switch (wave2)
-	{
-	case 0:
-		PlaySound((LPCSTR)MAKEINTRESOURCE(IDR_WAVE2_1), NULL, SND_ASYNC | SND_RESOURCE);
-
-		break;
-	case 1:
-		PlaySound((LPCSTR)MAKEINTRESOURCE(IDR_WAVE2_2), NULL, SND_ASYNC | SND_RESOURCE);
-
-		break;
-	case 2:
-		PlaySound((LPCSTR)MAKEINTRESOURCE(IDR_WAVE2_3), NULL, SND_ASYNC | SND_RESOURCE);
-
-		break;
-	case 3:
-		PlaySound((LPCSTR)MAKEINTRESOURCE(IDR_WAVE2_4), NULL, SND_ASYNC | SND_RESOURCE);
-
-		break;
-	case 4:
-		PlaySound((LPCSTR)MAKEINTRESOURCE(IDR_WAVE2_5), NULL, SND_ASYNC | SND_RESOURCE);
-
-		break;
-	case 5:
-		PlaySound((LPCSTR)MAKEINTRESOURCE(IDR_WAVE2_6), NULL, SND_ASYNC | SND_RESOURCE);
-
-		break;
-	case 6:
-		PlaySound((LPCSTR)MAKEINTRESOURCE(IDR_WAVE2_7), NULL, SND_ASYNC | SND_RESOURCE);
-
-		break;
-	case 7:
-		PlaySound((LPCSTR)MAKEINTRESOURCE(IDR_WAVE2_8), NULL, SND_ASYNC | SND_RESOURCE);
-
-	case 8:
-		PlaySound((LPCSTR)MAKEINTRESOURCE(IDR_WAVE2_9), NULL, SND_ASYNC | SND_RESOURCE);
-
-		break;
-	case 9:
-		PlaySound((LPCSTR)MAKEINTRESOURCE(IDR_WAVE2_10), NULL, SND_ASYNC | SND_RESOURCE);
-
-		break;
-	case 10:
-		PlaySound((LPCSTR)MAKEINTRESOURCE(IDR_WAVE2_11), NULL, SND_ASYNC | SND_RESOURCE);
-
-		break;
-	case 11:
-		PlaySound((LPCSTR)MAKEINTRESOURCE(IDR_WAVE2_12), NULL, SND_ASYNC | SND_RESOURCE);
-
-		break;
-	case 12:
-		PlaySound((LPCSTR)MAKEINTRESOURCE(IDR_WAVE2_13), NULL, SND_ASYNC | SND_RESOURCE);
-
-		break;
-	case 13:
-		PlaySound((LPCSTR)MAKEINTRESOURCE(IDR_WAVE2_14), NULL, SND_ASYNC | SND_RESOURCE);
-
-		break;
-	}
-	
-	switch (wave3)
-	{
-	case 0:
-		PlaySound((LPCSTR)MAKEINTRESOURCE(IDR_WAVE3_1), NULL, SND_ASYNC | SND_RESOURCE);
-
-		break;
-	case 1:
-		PlaySound((LPCSTR)MAKEINTRESOURCE(IDR_WAVE3_2), NULL, SND_ASYNC | SND_RESOURCE);
-
-		break;
-	case 2:
-		PlaySound((LPCSTR)MAKEINTRESOURCE(IDR_WAVE3_3), NULL, SND_ASYNC | SND_RESOURCE);
-
-		break;
-	case 3:
-		PlaySound((LPCSTR)MAKEINTRESOURCE(IDR_WAVE3_4), NULL, SND_ASYNC | SND_RESOURCE);
-
-		break;
-	case 4:
-		PlaySound((LPCSTR)MAKEINTRESOURCE(IDR_WAVE3_5), NULL, SND_ASYNC | SND_RESOURCE);
-
-		break;
-	case 5:
-		PlaySound((LPCSTR)MAKEINTRESOURCE(IDR_WAVE3_6), NULL, SND_ASYNC | SND_RESOURCE);
-
-		break;
-	case 6:
-		PlaySound((LPCSTR)MAKEINTRESOURCE(IDR_WAVE3_7), NULL, SND_ASYNC | SND_RESOURCE);
-
-		break;
-	case 7:
-		PlaySound((LPCSTR)MAKEINTRESOURCE(IDR_WAVE3_8), NULL, SND_ASYNC | SND_RESOURCE);
-
-		break;
-	case 8:
-		PlaySound((LPCSTR)MAKEINTRESOURCE(IDR_WAVE3_9), NULL, SND_ASYNC | SND_RESOURCE);
-
-		break;
-	case 9:
-		PlaySound((LPCSTR)MAKEINTRESOURCE(IDR_WAVE3_10), NULL, SND_ASYNC | SND_RESOURCE);
-
-		break;
-	case 10:
-		PlaySound((LPCSTR)MAKEINTRESOURCE(IDR_WAVE3_11), NULL, SND_ASYNC | SND_RESOURCE);
-
-		break;
-	case 11:
-		PlaySound((LPCSTR)MAKEINTRESOURCE(IDR_WAVE3_12), NULL, SND_ASYNC | SND_RESOURCE);
-
-		break;
-	case 12:
-		PlaySound((LPCSTR)MAKEINTRESOURCE(IDR_WAVE3_13), NULL, SND_ASYNC | SND_RESOURCE);
-
-		break;
-	case 13:
-		PlaySound((LPCSTR)MAKEINTRESOURCE(IDR_WAVE3_14), NULL, SND_ASYNC | SND_RESOURCE);
-
-		break;
-	}
-	
-	switch (wave4)
-	{
-	case 0:
-		PlaySound((LPCSTR)MAKEINTRESOURCE(IDR_WAVE4_1), NULL, SND_ASYNC | SND_RESOURCE);
-
-		break;
-	case 1:
-		PlaySound((LPCSTR)MAKEINTRESOURCE(IDR_WAVE4_2), NULL, SND_ASYNC | SND_RESOURCE);
-
-		break;
-	case 2:
-		PlaySound((LPCSTR)MAKEINTRESOURCE(IDR_WAVE4_3), NULL, SND_ASYNC | SND_RESOURCE);
-
-		break;
-	case 3:
-		PlaySound((LPCSTR)MAKEINTRESOURCE(IDR_WAVE4_4), NULL, SND_ASYNC | SND_RESOURCE);
-
-		break;
-	case 4:
-		PlaySound((LPCSTR)MAKEINTRESOURCE(IDR_WAVE4_5), NULL, SND_ASYNC | SND_RESOURCE);
-
-		break;
-	case 5:
-		PlaySound((LPCSTR)MAKEINTRESOURCE(IDR_WAVE4_6), NULL, SND_ASYNC | SND_RESOURCE);
-
-		break;
-	case 6:
-		PlaySound((LPCSTR)MAKEINTRESOURCE(IDR_WAVE4_7), NULL, SND_ASYNC | SND_RESOURCE);
-
-		break;
-	case 7:
-		PlaySound((LPCSTR)MAKEINTRESOURCE(IDR_WAVE4_8), NULL, SND_ASYNC | SND_RESOURCE);
-
-		break;
-	case 8:
-		PlaySound((LPCSTR)MAKEINTRESOURCE(IDR_WAVE4_9), NULL, SND_ASYNC | SND_RESOURCE);
-
-		break;
-	case 9:
-		PlaySound((LPCSTR)MAKEINTRESOURCE(IDR_WAVE4_10), NULL, SND_ASYNC | SND_RESOURCE);
-
-		break;
-	case 10:
-		PlaySound((LPCSTR)MAKEINTRESOURCE(IDR_WAVE4_11), NULL, SND_ASYNC | SND_RESOURCE);
-
-		break;
-	case 11:
-		PlaySound((LPCSTR)MAKEINTRESOURCE(IDR_WAVE4_12), NULL, SND_ASYNC | SND_RESOURCE);
-
-		break;
-	case 12:
-		PlaySound((LPCSTR)MAKEINTRESOURCE(IDR_WAVE4_13), NULL, SND_ASYNC | SND_RESOURCE);
-
-		break;
-	case 13:
-		PlaySound((LPCSTR)MAKEINTRESOURCE(IDR_WAVE4_14), NULL, SND_ASYNC | SND_RESOURCE);
-
-		break;
-	}
 }

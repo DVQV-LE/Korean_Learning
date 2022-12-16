@@ -218,7 +218,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="res\Daehwa.rc2" />
-    <None Include="res\wave1.bin" />
   </ItemGroup>
   <ItemGroup>
     <Image Include="res\bitmap1.bmp" />
