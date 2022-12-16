@@ -1,0 +1,275 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="소스 파일">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="헤더 파일">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="리소스 파일">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Daehwa.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="DaehwaDlg.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="framework.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="pch.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Tab1.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Tab2.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Tab3.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="D_Tab1.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="D_Tab2.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="D_Tab3.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Daehwa.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="DaehwaDlg.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="pch.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Tab1.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Tab2.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Tab3.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="D_Tab1.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="D_Tab2.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="D_Tab3.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Daehwa.rc">
+      <Filter>리소스 파일</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\Daehwa.rc2">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="res\wave1.bin">
+      <Filter>리소스 파일</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\Daehwa.ico">
+      <Filter>리소스 파일</Filter>
+    </Image>
+    <Image Include="res\bitmap1.bmp">
+      <Filter>리소스 파일</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Media Include="res\Sound\sound_1_1.wav">
+      <Filter>리소스 파일</Filter>
+    </Media>
+    <Media Include="res\Sound\sound_1_2.wav">
+      <Filter>리소스 파일</Filter>
+    </Media>
+    <Media Include="res\Sound\sound_1_3.wav">
+      <Filter>리소스 파일</Filter>
+    </Media>
+    <Media Include="res\Sound\sound_1_4.wav">
+      <Filter>리소스 파일</Filter>
+    </Media>
+    <Media Include="res\Sound\sound_1_5.wav">
+      <Filter>리소스 파일</Filter>
+    </Media>
+    <Media Include="res\Sound\sound_1_6.wav">
+      <Filter>리소스 파일</Filter>
+    </Media>
+    <Media Include="res\Sound\sound_1_7.wav">
+      <Filter>리소스 파일</Filter>
+    </Media>
+    <Media Include="res\Sound\sound_1_8.wav">
+      <Filter>리소스 파일</Filter>
+    </Media>
+    <Media Include="res\Sound\sound_1_9.wav">
+      <Filter>리소스 파일</Filter>
+    </Media>
+    <Media Include="res\Sound\sound_1_10.wav">
+      <Filter>리소스 파일</Filter>
+    </Media>
+    <Media Include="res\Sound\sound_1_11.wav">
+      <Filter>리소스 파일</Filter>
+    </Media>
+    <Media Include="res\Sound\sound_1_12.wav">
+      <Filter>리소스 파일</Filter>
+    </Media>
+    <Media Include="res\Sound\sound_1_13.wav">
+      <Filter>리소스 파일</Filter>
+    </Media>
+    <Media Include="res\Sound\sound_1_14.wav">
+      <Filter>리소스 파일</Filter>
+    </Media>
+    <Media Include="res\Sound\sound_2_1.wav">
+      <Filter>리소스 파일</Filter>
+    </Media>
+    <Media Include="res\Sound\sound_2_3.wav">
+      <Filter>리소스 파일</Filter>
+    </Media>
+    <Media Include="res\Sound\sound_2_4.wav">
+      <Filter>리소스 파일</Filter>
+    </Media>
+    <Media Include="res\Sound\sound_2_5.wav">
+      <Filter>리소스 파일</Filter>
+    </Media>
+    <Media Include="res\Sound\sound_2_6.wav">
+      <Filter>리소스 파일</Filter>
+    </Media>
+    <Media Include="res\Sound\sound_2_7.wav">
+      <Filter>리소스 파일</Filter>
+    </Media>
+    <Media Include="res\Sound\sound_2_8.wav">
+      <Filter>리소스 파일</Filter>
+    </Media>
+    <Media Include="res\Sound\sound_2_9.wav">
+      <Filter>리소스 파일</Filter>
+    </Media>
+    <Media Include="res\Sound\sound_2_10.wav">
+      <Filter>리소스 파일</Filter>
+    </Media>
+    <Media Include="res\Sound\sound_2_11.wav">
+      <Filter>리소스 파일</Filter>
+    </Media>
+    <Media Include="res\Sound\sound_2_12.wav">
+      <Filter>리소스 파일</Filter>
+    </Media>
+    <Media Include="res\Sound\sound_2_13.wav">
+      <Filter>리소스 파일</Filter>
+    </Media>
+    <Media Include="res\Sound\sound_2_14.wav">
+      <Filter>리소스 파일</Filter>
+    </Media>
+    <Media Include="res\Sound\sound_3_1.wav">
+      <Filter>리소스 파일</Filter>
+    </Media>
+    <Media Include="res\Sound\sound_3_2.wav">
+      <Filter>리소스 파일</Filter>
+    </Media>
+    <Media Include="res\Sound\sound_3_3.wav">
+      <Filter>리소스 파일</Filter>
+    </Media>
+    <Media Include="res\Sound\sound_3_4.wav">
+      <Filter>리소스 파일</Filter>
+    </Media>
+    <Media Include="res\Sound\sound_3_5.wav">
+      <Filter>리소스 파일</Filter>
+    </Media>
+    <Media Include="res\Sound\sound_3_6.wav">
+      <Filter>리소스 파일</Filter>
+    </Media>
+    <Media Include="res\Sound\sound_3_7.wav">
+      <Filter>리소스 파일</Filter>
+    </Media>
+    <Media Include="res\Sound\sound_3_8.wav">
+      <Filter>리소스 파일</Filter>
+    </Media>
+    <Media Include="res\Sound\sound_3_9.wav">
+      <Filter>리소스 파일</Filter>
+    </Media>
+    <Media Include="res\Sound\sound_3_10.wav">
+      <Filter>리소스 파일</Filter>
+    </Media>
+    <Media Include="res\Sound\sound_3_11.wav">
+      <Filter>리소스 파일</Filter>
+    </Media>
+    <Media Include="res\Sound\sound_3_12.wav">
+      <Filter>리소스 파일</Filter>
+    </Media>
+    <Media Include="res\Sound\sound_3_13.wav">
+      <Filter>리소스 파일</Filter>
+    </Media>
+    <Media Include="res\Sound\sound_3_14.wav">
+      <Filter>리소스 파일</Filter>
+    </Media>
+    <Media Include="res\Sound\sound_4_1.wav">
+      <Filter>리소스 파일</Filter>
+    </Media>
+    <Media Include="res\Sound\sound_4_2.wav">
+      <Filter>리소스 파일</Filter>
+    </Media>
+    <Media Include="res\Sound\sound_4_3.wav">
+      <Filter>리소스 파일</Filter>
+    </Media>
+    <Media Include="res\Sound\sound_4_4.wav">
+      <Filter>리소스 파일</Filter>
+    </Media>
+    <Media Include="res\Sound\sound_4_5.wav">
+      <Filter>리소스 파일</Filter>
+    </Media>
+    <Media Include="res\Sound\sound_4_6.wav">
+      <Filter>리소스 파일</Filter>
+    </Media>
+    <Media Include="res\Sound\sound_4_7.wav">
+      <Filter>리소스 파일</Filter>
+    </Media>
+    <Media Include="res\Sound\sound_4_8.wav">
+      <Filter>리소스 파일</Filter>
+    </Media>
+    <Media Include="res\Sound\sound_4_9.wav">
+      <Filter>리소스 파일</Filter>
+    </Media>
+    <Media Include="res\Sound\sound_4_10.wav">
+      <Filter>리소스 파일</Filter>
+    </Media>
+    <Media Include="res\Sound\sound_4_11.wav">
+      <Filter>리소스 파일</Filter>
+    </Media>
+    <Media Include="res\Sound\sound_4_12.wav">
+      <Filter>리소스 파일</Filter>
+    </Media>
+    <Media Include="res\Sound\sound_4_13.wav">
+      <Filter>리소스 파일</Filter>
+    </Media>
+    <Media Include="res\Sound\sound_4_14.wav">
+      <Filter>리소스 파일</Filter>
+    </Media>
+    <Media Include="res\Sound\sound_2_2.wav">
+      <Filter>리소스 파일</Filter>
+    </Media>
+  </ItemGroup>
+</Project>
